@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      input:invalid {
+        border: red solid 4px;
+      }
+      input,
+      input:valid {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    Lab3-1
+    <br><br>
+    <form>
+      <label>ชื่อเต็ม/ย่อสาขา:</label>
+      <br>
+      <input type="text" name="name_branch" id="name_branch" />
+      <br><br>
+      <label>จำนวนเงินที่จะโอน</label>
+      <br>
+      <input type="number" name="amount" id="amount" />
+      <br><br>
+      <label>อาหารที่ชื่นชอบจากมากไปน้อย</label>
+      <br><br>
+      <label for="food1">อันดับที่ 1</label>
+      <select>
+        <option>เลือกรายการอาหาร</option>
+        <option>กระเพรา</option>
+        <option>ข้าวผัด</option>
+        <option>ไก่ทอด</option>
+        <option>อื่นๆ</option>
+      </select>
+      <br /><br />
+      <label for="food1">อันดับที่ 2</label>
+      <select>
+        <option>เลือกรายการอาหาร</option>
+        <option>กระเพรา</option>
+        <option>ข้าวผัด</option>
+        <option>ไก่ทอด</option>
+        <option>อื่นๆ</option>
+      </select>
+      <br /><br />
+      <label for="food1">อันดับที่ 3</label>
+      <select>
+        <option>เลือกรายการอาหาร</option>
+        <option>กระเพรา</option>
+        <option>ข้าวผัด</option>
+        <option>ไก่ทอด</option>
+        <option>อื่นๆ</option>
+      </select>
+      <br /><br />
+      <label for="food1">อันดับที่ 4</label>
+      <select>
+        <option>เลือกรายการอาหาร</option>
+        <option>กระเพรา</option>
+        <option>ข้าวผัด</option>
+        <option>ไก่ทอด</option>
+        <option>อื่นๆ</option>
+      </select>
+      <br /><br />
+      <label for="food1">อันดับที่ 5</label>
+      <select>
+        <option>เลือกรายการอาหาร</option>
+        <option>กระเพรา</option>
+        <option>ข้าวผัด</option>
+        <option>ไก่ทอด</option>
+        <option>อื่นๆ</option>
+      </select>
+      <p>ค่าไฟฟ้า 3 เดือนที่ผ่านมา</p>
+      เดือนที่ 1:<input type="number" name="amount_Elec" id="amount_Elec" /><br><br>
+      เดือนที่ 2:<input type="number" name="amount_Elec" id="amount_Elec" /><br><br>
+      เดือนที่ 3:<input type="number" name="amount_Elec" id="amount_Elec" />
+      <p>รหัสบัตรประชาชน</p>
+      <input type="text" pattern="[0-9]{13,}" /><br /><br />
+      <label
+        >ความพึ่งพอใจของหนังสือเล่มนี้:
+        <input type="radio" name="satisfaction" id="most" />ชอบมาก
+        <input type="radio" name="satisfaction" id="mush" />มาก
+        <input type="radio" name="satisfaction" id="moderately" />ปานกลาง
+        <input type="radio" name="satisfaction" id="bit" />น้อย
+        <input type="radio" name="satisfaction" id="least" />น้อยมาก
+      </label>
+      <br /><br />
+      <p>อาการป่วย:</p>
+      <textarea name="" id=""></textarea>
+      <br /><br />
+      <label
+        >ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่:
+        <input type="radio" name="vaccine" id="yes" /> ใช่
+        <input type="radio" name="vaccine" id="no" /> ไม่
+      </label>
+      <br><br>
+      <label>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน <br><br>
+        เริ่มเรียน:<input type="time" name="time" id="learn">
+        สิ้นสุดการเรียน:<input type="time" name="time" id="learn">
+      </label>
+      <br><br>
+      <label>
+            วันเวลาที่ต้องไปพบแพทย์
+            <input type="datetime-local" name="time" id="time">
+      </label>
+      <br><br>
+      <label>รหัสผ่าน 5 อัขระเป็นต้นไป ที่ต้องประกอบด้วยอักขระตัวใหญ่ ตัวเล็กและตัวเลข อย่างน้อยชนิดละ 1 อักขระ:
+        <br>
+        <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{5,}">
+      </label>
+      <br><br>
+      <label >บ้านเลขที่:
+        <br>
+        <input type="text" name="a" id="a" pattern="[\d\/\s]+">
+      </label>
+      <br><br>
+      <label>รหัสสินค้า 3 ตัวแรกเป็นอักขระตัวใหญ่ตามด้วยตัวเลข 2 ตัวเท่านั้น
+        <br>
+        <input type="text" name="" id="" pattern="[A-Z]{3,}[\d]{2}">
+      </label>
+      <br>
+      <label>กรอกชื่อ นามสกุล ด้วยภาษาไทยเท่านั้น
+        <br>
+        <input type="text" pattern="[ก-ฮ]+">
+      </label>
+      
+    </form>
+  </body>
+</html>
