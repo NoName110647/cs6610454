@@ -1,0 +1,59 @@
+body {
+  font-family: Verdana, serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background-color: rgb(98, 98, 98);
+  color: white;
+  font-weight: bold;
+  flex-basis: 100%;
+}
+
+footer {
+  font-size: .8em;
+  order: 4;
+}
+
+header {
+  order: 1;
+}
+
+aside {
+  background-color: rgb(240, 240, 240);
+  order: 3;
+}
+
+section,
+header,
+footer,
+aside {
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: rgb(180, 180, 180);
+  order: 2;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  aside {
+    flex-basis: 33%;
+    order: 2;
+  }
+  section {
+    flex-basis: 67%;
+    order: 3;
+  }
+}
+
