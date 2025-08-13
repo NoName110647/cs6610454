@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changecolor(inputid) {
+            var input = document.getElementById(inputid);
+            input.style.color = 'green';
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <label > Name: </label>
+        <input type="text" id="name" autofocus onblur="changecolor('name')" required>
+        <br>
+        <label > Age: </label>
+        <input type="text" id="age" onblur="changecolor('age')"  required>
+        <br>
+        <label > Birthdate: </label>
+        <input type="text" id="birth" onblur="changecolor('birth')"  required>
+    </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+    </style>
+    <script>
+        function add() {
+            let name = document.getElementById("cus_name")
+            let adress = document.getElementById("cus_add")
+            let tel = document.getElementById("cus_tel")
+
+            let atb = document.getElementById("tb")
+            let atr = document.createElement("tr");
+            let aname = document.createElement("td")
+            let aadress = document.createElement("td")
+            let atel = document.createElement("td")
+
+            aname.innerHTML= document.getElementById("cus_name").value;
+            aadress.innerHTML= document.getElementById("cus_add").value;
+            atel.innerHTML= document.getElementById("cus_tel").value;
+
+            atr.appendChild(aname);
+            atr.appendChild(aadress);
+            atr.appendChild(atel);
+            atb.appendChild(atr);
+        }
+        window.onload = function() {
+            var user = document.getElementById("addButton");
+            user.addEventListener('click', add);
+        }
+        
+    </script>
+</head>
+
+<body>
+    <form>
+        <label >ชื่อลูกค้า :</label>
+        <input type="text" id="cus_name">
+        <br><br>
+        <label >ที่อยู่ลูกค้า :</label>
+        <input type="text" id="cus_add">
+        <br><br>
+        <label >เบอร์โทร :</label>
+        <input type="text" id="cus_tel" ">
+        <br><br>
+        <input type="button" id="addButton" value="Add" ">
+    </form>
+    <table style="width:100%" id="tb">
+        <tr>
+            <th>ชื่อลูกค้า</th>
+            <th>ที่อยู่</th>
+            <th>เบอร์โทร</th>
+        </tr>
+
+    </table>
+</body>
+
+</html>
